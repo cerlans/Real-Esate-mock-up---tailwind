@@ -1,0 +1,36 @@
+.invisibleMenu {
+  background: black;
+  color:white;
+  height:0px;
+  overflow:hidden;
+  transition:  height .8s;
+}
+
+.visibleMenu {
+  background: black;
+  color:white;
+  height:250px;
+  transition: height.8s;
+  overflow:visible;
+}
+
+#heroImage {
+  background: url('https://i.vgy.me/T9qixe.jpg');
+  background-size: cover;
+  background-position: center;
+  height:90vh;
+  filter: grayscale(50%);
+}
+
+#photoListings img{
+filter: grayscale(40%);
+}
+
+#viewMore{
+  background: url('https://i.vgy.me/OIDkbI.jpg');
+  width:100%;
+  background-size:cover;
+  filter: grayscale(50%);
+  height:400px;
+  
+}
