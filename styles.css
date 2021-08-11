@@ -12,7 +12,9 @@
   height:250px;
   transition: height.8s;
   /*Come back tomorrow and see why this worked*/
-  overflow-x: hidden;}
+  overflow: hidden;
+
+}
 
 #heroImage {
   background: url('https://i.vgy.me/T9qixe.jpg');
