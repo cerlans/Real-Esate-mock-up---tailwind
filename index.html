@@ -10,7 +10,7 @@
 </head>
 <body>
    <header>
-      <nav class='flex justify-between p-6 text-2xl bg-black text-white'>
+      <nav class='flex relative justify-between p-6 text-2xl bg-black text-white'>
          <div class='cursor-pointer'>
             <i class="fas fa-home"></i>
          </div>
@@ -19,7 +19,7 @@
          </div>
       </nav>
       <!--Hidden Menu Begins Here-->
-      <div class='invisibleMenu' id='hiddenMenu'>
+      <div class='invisibleMenu absolute z-50 w-full' id='hiddenMenu'>
          <div class='pl-8 pr-8 pt-8 font-semibold'>
             <div class='flex justify-between pb-4 cursor-pointer'>
                <div>Home</div>
@@ -256,59 +256,59 @@
       <!--Fake Company logos End here-->
       <div id='photoListings'>
          <div class='p-8 text-white'>
-          <!--Flex parent that will activate at SM breakpoint-->
-          <div class='sm:flex'>
-          <div class='sm: mt-8 sm:mr-8'>
-            <h2 class='font-bold text-2xl'>Bunni Group is the larget developmental and sales agency</h2>
-          </div>
-            <!--INDIVIDUAL IMAGE CONTAINERS-->
-            <div class='relative mt-8 mb-8 cursor-pointer '>
-               <div class=''>
-                  <img src="https://i.vgy.me/FY7YGk.jpg" alt="FY7YGk.jpg">
+            <!--Flex parent that will activate at SM breakpoint-->
+            <div class='sm:flex'>
+               <div class='sm: mt-8 sm:mr-8'>
+                  <h2 class='font-bold text-2xl'>Bunni Group is the larget developmental and sales agency</h2>
                </div>
-               <div class='absolute pl-4 pb-4 bottom-0 text-2xl font-bold '>
-                  <span>Office Space</span>
-               </div>
-            </div>
-          </div>
-          <!--Flex parent that will activate at SM breakpoint-->
-          <div class='sm:flex'>
-            <div class='relative mt-8 mb-8 cursor-pointer sm:mr-8'>
-               <div class=''>
-                  <img src="https://i.vgy.me/EpJgxf.jpg" alt="EpJgxf.jpg">
-               </div>
-               <div class='absolute pl-4 pb-4 bottom-0 text-2xl font-bold '>
-                  <span>Luxury Villas</span>
+               <!--INDIVIDUAL IMAGE CONTAINERS-->
+               <div class='relative mt-8 mb-8 cursor-pointer '>
+                  <div class=''>
+                     <img src="https://i.vgy.me/FY7YGk.jpg" alt="FY7YGk.jpg">
+                  </div>
+                  <div class='absolute pl-4 pb-4 bottom-0 text-2xl font-bold '>
+                     <span>Office Space</span>
+                  </div>
                </div>
             </div>
-            <div class='relative mt-8 mb-8 cursor-pointer'>
-               <div class=''>
-                  <img src="https://i.vgy.me/k4Kc0G.jpg" alt="k4Kc0G.jpg">
+            <!--Flex parent that will activate at SM breakpoint-->
+            <div class='sm:flex'>
+               <div class='relative mt-8 mb-8 cursor-pointer sm:mr-8'>
+                  <div class=''>
+                     <img src="https://i.vgy.me/EpJgxf.jpg" alt="EpJgxf.jpg">
+                  </div>
+                  <div class='absolute pl-4 pb-4 bottom-0 text-2xl font-bold '>
+                     <span>Luxury Villas</span>
+                  </div>
                </div>
-               <div class='absolute pl-4 pb-4 bottom-0 text-2xl font-bold '>
-                  <span>Modern Houses</span>
-               </div>
-            </div>
-          </div>
-          <!--Flex parent that will activate at SM breakpoint-->
-          <div class='sm:flex'>
-            <div class='relative mt-8 mb-8 cursor-pointer sm:mr-8'>
-               <div class=''>
-                  <img src="https://i.vgy.me/FY7YGk.jpg" alt="FY7YGk.jpg">
-               </div>
-               <div class='absolute pl-4 pb-4 bottom-0 text-2xl font-bold '>
-                  <span>Modern Apartments</span>
-               </div>
-            </div>
-            <div class='relative mt-8 mb-8 cursor-pointer'>
-               <div class=''>
-                  <img src="https://i.vgy.me/FY7YGk.jpg" alt="FY7YGk.jpg">
-               </div>
-               <div class='absolute pl-4 pb-4 bottom-0 text-2xl font-bold '>
-                  <span>SkyScrapers</span>
+               <div class='relative mt-8 mb-8 cursor-pointer'>
+                  <div class=''>
+                     <img src="https://i.vgy.me/k4Kc0G.jpg" alt="k4Kc0G.jpg">
+                  </div>
+                  <div class='absolute pl-4 pb-4 bottom-0 text-2xl font-bold '>
+                     <span>Modern Houses</span>
+                  </div>
                </div>
             </div>
-          </div>
+            <!--Flex parent that will activate at SM breakpoint-->
+            <div class='sm:flex'>
+               <div class='relative mt-8 mb-8 cursor-pointer sm:mr-8'>
+                  <div class=''>
+                     <img src="https://i.vgy.me/FY7YGk.jpg" alt="FY7YGk.jpg">
+                  </div>
+                  <div class='absolute pl-4 pb-4 bottom-0 text-2xl font-bold '>
+                     <span>Modern Apartments</span>
+                  </div>
+               </div>
+               <div class='relative mt-8 mb-8 cursor-pointer'>
+                  <div class=''>
+                     <img src="https://i.vgy.me/FY7YGk.jpg" alt="FY7YGk.jpg">
+                  </div>
+                  <div class='absolute pl-4 pb-4 bottom-0 text-2xl font-bold '>
+                     <span>SkyScrapers</span>
+                  </div>
+               </div>
+            </div>
          </div>
       </div>
       <!--IMAGE LISTING FOR REAL ESTATE TYPES END HERE-->
@@ -344,25 +344,76 @@
          </div>
          <!---Numbered Text containers end here-->
          <div class='p-8 text-white pt-20'>
-          <div>
-            <h2 class='mb-8 text-4xl font-bold'>Modern Home with great interior Design</h2>
-            <p>lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet</p>
-            <div class='mt-8 '>
-            <img src="https://i.vgy.me/FY7YGk.jpg" alt="FY7YGk.jpg">
+            <div>
+               <h2 class='mb-8 text-4xl font-bold'>Modern Home with great interior Design</h2>
+               <p>lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet</p>
+               <div class='mt-8 '>
+                  <img src="https://i.vgy.me/FY7YGk.jpg" alt="FY7YGk.jpg">
+               </div>
+            </div>
          </div>
-          </div>
-        </div>
       </section>
    </main>
    <footer class='bg-black'>
-   <div class='p-8 text-white pt-20'>
-   <div>
-     <h2 class='mb-8 text-4xl font-bold'>Contact us for more Information</h2>
-     <p>lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet</p>
-    
-   </div>
- </div>
-  </footer>
+      <div class='p-8 text-white pt-20'>
+         <div>
+            <h2 class='mb-8 text-4xl font-bold'>Contact us for more Information</h2>
+            <p>lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet</p>
+            <div>
+               <div>
+                  <h2 class='mt-4 mb-4 font-semibold text-2xl'>Norwalk,CT</h2>
+               </div>
+               <div>
+                  <div class='mb-2'><i class="fas fa-phone-alt mr-4 "></i> 203-408-0584</div>
+                  <div class='mb-2'><i class="fas fa-phone-alt mr-4 "></i> 203-408-0584</div>
+                  <div class='mb-2'><i class="fas fa-phone-alt mr-4 "></i> 203-408-0584</div>
+               </div>
+            </div>
+            <div>
+               <div>
+                  <h2 class='mt-4 mb-4 font-semibold text-2xl'>Stamford,CT</h2>
+               </div>
+               <div>
+                  <div class='mb-2'><i class="fas fa-phone-alt mr-4 "></i> 203-408-0584</div>
+                  <div class='mb-2'><i class="fas fa-phone-alt mr-4 "></i> 203-408-0584</div>
+                  <div class='mb-2'><i class="fas fa-phone-alt mr-4 "></i> 203-408-0584</div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--Footer navigation Starts here-->
+      <div class='p-8 text-white pt-32'>
+         <!--Logo and following small text-->
+         <div>
+            <i class="fas fa-home text-5xl mb-6"></i>
+            <p>Showcase all your properties in a truly modern manner. Welcome to Fokkner.</p>
+         </div>
+         <!--Start off contact tooltip section-->
+         <div>
+            <div>
+               <h2 class='mt-4 mb-4 font-semibold text-2xl'>Contact</h2>
+            </div>
+            <div>
+               <div class='mb-2'><i class="fas fa-phone-alt mr-4 "></i> 203-408-0584</div>
+               <div class='mb-2'><i class="fas fa-phone-alt mr-4 "></i> 203-408-0584</div>
+               <div class='mb-2'><i class="fas fa-phone-alt mr-4 "></i> 203-408-0584</div>
+            </div>
+         </div>
+         <!--End of contact Tool tip-->
+         <!--start off useful links section-->
+         <div>
+            <div>
+               <h2 class='mt-4 mb-4 font-semibold text-2xl'>Useful Links</h2>
+            </div>
+            <div>
+               <div class='mb-2'><i class="fas fa-phone-alt mr-4 "></i> 203-408-0584</div>
+               <div class='mb-2'><i class="fas fa-phone-alt mr-4 "></i> 203-408-0584</div>
+               <div class='mb-2'><i class="fas fa-phone-alt mr-4 "></i> 203-408-0584</div>
+            </div>
+         </div>
+         <!--End off Useful Links section-->
+      </div>
+   </footer>
    <script src='script.js'></script>
 </body>
 </html>
