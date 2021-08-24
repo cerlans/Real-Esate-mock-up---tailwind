@@ -1,403 +1,67 @@
 
 
-<html>
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-   <link rel="stylesheet" type="text/css" href="styles.css">
-</head>
-<body>
-   <header>
-      <nav class='flex relative justify-between p-6 text-2xl bg-black text-white'>
-         <div class='cursor-pointer lg:flex-1'>
-            <i class="fas fa-home"></i>
-         </div>
-         <div class='cursor-pointer block lg:hidden' id='buttonForMenu'>
-            <i class="fas fa-th-large"></i>
-         </div>
-         <div class=' text-lg hidden lg:block lg:flex-1'>
-            <ul class='flex justify-between font-light'>
-               <li class='cursor-pointer '>Home</li>
-               <li class='cursor-pointer' >Property</li>
-               <li class='cursor-pointer'>Pages</li>
-               <li class='cursor-pointer'>Shop</li>
-            </ul>
-         </div>
-      </nav>
-      <!--Hidden Menu Begins Here-->
-      <div class='invisibleMenu absolute z-50 w-full' id='hiddenMenu'>
-         <div class='pl-8 pr-8 pt-8 font-semibold'>
-            <div class='flex justify-between pb-4 cursor-pointer'>
-               <div>Home</div>
-               <div> <i class="fas fa-chevron-right"></i></div>
-            </div>
-            <div class='flex justify-between pb-4 cursor-pointer'>
-               <div>About</div>
-               <div> <i class="fas fa-chevron-right"></i></div>
-            </div>
-            <div class='flex justify-between pb-4 cursor-pointer'>
-               <div>Testing</div>
-               <div>
-                  <i class="fas fa-chevron-right"></i>
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+      <title>Document</title>
+   </head>
+   <body class='bg-black'>
+      <div class='p-4 text-white'>
+         <h2 class='text-4xl font-bold mb-8'>Modern way of living in  cluster home</h2>
+      <div class='sm:flex'>
+         <!--Flex Parent-->
+         <div class='flex justify-between flex-1'>
+            <div>
+               <div class="mb-2">
+                  <h4>Property Size:</h4>
+                  <span>130 m2</span>
+               </div>
+               <div class="mb-2">
+                  <h4>Structure:</h4>
+                  <span>Two Bedroom</span>
+               </div>
+               <div class="mb-2">
+                  <h4>Accomodation:</h4>
+                  <span>Furnished living spaces</span>
                </div>
             </div>
-            <div class='flex justify-between pb-4 cursor-pointer'>
-               <div>Pages</div>
-               <div>
-                  <i class="fas fa-chevron-right"></i>
+            <div>
+               <div class="mb-2">
+                  <h4>Heating:</h4>
+                  <span>Floor Heating</span>
                </div>
-            </div>
-            <div class='flex justify-between pb-4 cursor-pointer'>
-               <div>Blog</div>
-               <div>
-                  <i class="fas fa-chevron-right"></i>
+               <div class="mb-2">
+                  <h4>Property Type:</h4>
+                  <span>Town Home</span>
+               </div>
+               <div class="mb-2">
+                  <h4>Parking Spots:</h4>
+                  <span>1 Parking spot</span>
                </div>
             </div>
          </div>
-      </div>
-      <!--Hidden Menu Ends here-->
-   </header>
-   <main class='bg-black'>
-      <div class='flex items-center justify-center   p-8  text-white font-bold' id='heroImage'>
-         <div class='max-w-sm sm:max-w-xl'>
-            <h1 class='text-4xl mb-6 sm:text-5xl '>Build a Great Tomorrow for All</h1>
-            <p class='text-xl font-medium'>Our idea is to create a brighter future for business, for business to thrive we have to do lorem ipsum dolor sit amet, watch us do lorem ipsum dolor sit amet</p>
-            <button class='mt-12 border p-4 font-medium'>Make An inquiry</button>
-         </div>
-      </div>
-      <!--Fake company Logo List section-->
-      <div class='pt-32 pb-16 items-center'>
-         <!--THIS IS A LARGE FLEX CONTAINER THAT WILL ACTIVATE AT 1024PX-->
-         <div class='lg:flex lg:justify-center'>
-         <div class='mb-12 sm:flex sm:justify-center lg:flex-none'>
-            <div class='pb-16 sm:flex-1'>
-               <svg class='m-auto' version="1.1" id="Capa_1" fill='white' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="91.965px" height="91.965px" viewBox="0 0 91.965 91.965" style="enable-background:new 0 0 91.965 91.965;" xml:space="preserve">
-                  <g>
-                     <path d="M89.779,31.962L49.057,72.688c-2.326,2.322-6.108,2.322-8.437,0c-1.161-1.164-1.741-2.691-1.741-4.219   s0.58-3.052,1.741-4.216l43.684-43.679C76.066,8.175,61.982,0,45.983,0C20.588,0,0.004,20.588,0.004,45.98   c0,4.891,0.77,9.6,2.186,14.021l40.723-40.725c2.324-2.326,6.106-2.326,8.431,0c1.162,1.162,1.742,2.689,1.742,4.216   c0,1.528-0.58,3.056-1.742,4.218L7.666,71.391c8.235,12.397,22.32,20.574,38.317,20.574c25.394,0,45.978-20.589,45.978-45.982   C91.961,41.092,91.191,36.385,89.779,31.962z M23.495,74.432c-1.592,0-3.089-0.617-4.215-1.744c-2.323-2.324-2.323-6.109,0-8.434   l44.976-44.977c2.326-2.326,6.109-2.326,8.434,0c1.127,1.125,1.75,2.625,1.75,4.218c0,1.591-0.623,3.087-1.75,4.216L27.713,72.688   C26.586,73.812,25.088,74.432,23.495,74.432z"/>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-               </svg>
-            </div>
-            <div class='pb-16 sm:flex-1'>
-            <svg class='m-auto' version="1.1" id="Capa_1" fill='white' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="93.218px" height="93.218px" viewBox="0 0 93.218 93.218" style="enable-background:new 0 0 93.218 93.218;" xml:space="preserve">
-               <g>
-                  <g>
-                     <path d="M70.547,13.228c-1.189-2.818-3.953-4.652-7.012-4.652h-49.98v15.223h31.952L0,70.561h21.242l47.747-49.065    C71.124,19.304,71.736,16.047,70.547,13.228z"/>
-                     <path d="M93.218,22.658H71.977L24.229,71.724c-2.135,2.189-2.748,5.449-1.558,8.267c1.19,2.82,3.953,4.651,7.012,4.651h49.98    V69.419H47.711L93.218,22.658z"/>
-                  </g>
-               </g>
-               <g>
-               </g>
-               <g>
-               </g>
-               <g>
-               </g>
-               <g>
-               </g>
-               <g>
-               </g>
-               <g>
-               </g>
-               <g>
-               </g>
-               <g>
-               </g>
-               <g>
-               </g>
-               <g>
-               </g>
-               <g>
-               </g>
-               <g>
-               </g>
-               <g>
-               </g>
-               <g>
-               </g>
-               <g>
-               </g>
-               </svg>
-            </div>
-         </div>
-         <div class='mb-12 sm:flex sm:justify-center  lg:flex-none'>
-            <div class='pb-16 sm:flex-1'>
-            <svg class='m-auto' fill='white' version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="95.527px" height="95.527px" viewBox="0 0 95.527 95.527" style="enable-background:new 0 0 95.527 95.527;" xml:space="preserve">
-               <g>
-                  <g>
-                     <path d="M25.446,34.98c0.778,0.15,1.582,0.305,2.406,0.464c1.643,0.318,3.373,0.655,5.164,1.004    c1.799,0.298,3.601,0.805,5.425,1.321c1.82,0.529,3.694,0.957,5.505,1.583c0.913,0.322,1.814,0.641,2.724,0.958l-7.341-23.139    H15.688l-1.029,16.975c1.339,0.166,4.455,0.048,8.605,0.563C23.964,34.796,24.693,34.888,25.446,34.98z"/>
-                     <path d="M95.527,50.345l-3.534,0.552c-1.171,0.188-2.33,0.425-3.503,0.573c-2.089,0.222-4.157,0.516-6.232,0.691l-1.883-34.99    H57.09l-8.178,23.923c0.139,0.05,0.282,0.1,0.421,0.15c1.736,0.687,3.438,1.36,5.093,2.014c1.631,0.649,3.211,1.277,4.711,1.871    c1.49,0.628,2.92,1.076,4.246,1.523c1.332,0.414,2.529,0.927,3.641,1.143c1.105,0.261,2.07,0.483,2.865,0.67    c1.597,0.375,2.51,0.59,2.51,0.59l-0.053,0.467c0,0-0.939-0.095-2.584-0.265c-0.826-0.085-1.826-0.188-2.977-0.307    c-1.167-0.078-2.42-0.438-3.827-0.684c-1.396-0.281-2.929-0.557-4.491-0.99c-1.572-0.405-3.229-0.831-4.943-1.27    c-1.7-0.435-3.455-0.882-5.237-1.337c-19.283-4.367-30.991-4.583-34.033-4.554l-0.012,0.185c-1.366,0.081-2.73,0.207-4.083,0.381    C6.72,41.102,3.311,41.732,0,42.696c1.713-0.146,3.43-0.21,5.136-0.271c1.71-0.044,3.414-0.076,5.117-0.057    c1.285,0.023,2.57,0.055,3.851,0.112l-2.243,35.857h19.636l1.124-24.168h2.708l6.276,24.187h12.112l7.33-22.946    c0.793,0.094,1.59,0.166,2.389,0.201l1.397,22.728h18.832l-1.293-24.054c2.159-0.403,4.263-1.068,6.386-1.57    C91.044,51.992,93.294,51.162,95.527,50.345z"/>
-                  </g>
-               </g>
-               <g>
-               </g>
-               <g>
-               </g>
-               <g>
-               </g>
-               <g>
-               </g>
-               <g>
-               </g>
-               <g>
-               </g>
-               <g>
-               </g>
-               <g>
-               </g>
-               <g>
-               </g>
-               <g>
-               </g>
-               <g>
-               </g>
-               <g>
-               </g>
-               <g>
-               </g>
-               <g>
-               </g>
-               <g>
-               </g>
-               </svg>
-            </div>
-            <div class='pb-16 sm:flex-1'>
-               <svg class='m-auto' version="1.1" id="Capa_1" fill='white' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="91.965px" height="91.965px" viewBox="0 0 91.965 91.965" style="enable-background:new 0 0 91.965 91.965;" xml:space="preserve">
-                  <g>
-                     <path d="M89.779,31.962L49.057,72.688c-2.326,2.322-6.108,2.322-8.437,0c-1.161-1.164-1.741-2.691-1.741-4.219   s0.58-3.052,1.741-4.216l43.684-43.679C76.066,8.175,61.982,0,45.983,0C20.588,0,0.004,20.588,0.004,45.98   c0,4.891,0.77,9.6,2.186,14.021l40.723-40.725c2.324-2.326,6.106-2.326,8.431,0c1.162,1.162,1.742,2.689,1.742,4.216   c0,1.528-0.58,3.056-1.742,4.218L7.666,71.391c8.235,12.397,22.32,20.574,38.317,20.574c25.394,0,45.978-20.589,45.978-45.982   C91.961,41.092,91.191,36.385,89.779,31.962z M23.495,74.432c-1.592,0-3.089-0.617-4.215-1.744c-2.323-2.324-2.323-6.109,0-8.434   l44.976-44.977c2.326-2.326,6.109-2.326,8.434,0c1.127,1.125,1.75,2.625,1.75,4.218c0,1.591-0.623,3.087-1.75,4.216L27.713,72.688   C26.586,73.812,25.088,74.432,23.495,74.432z"/>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-               </svg>
-            </div>
-         </div>
-        
-         </div>
-      </div>
-      <!--Fake Company logos End here-->
-      <div id='photoListings'>
-         <div class='m-auto p-8 text-white max-w-4xl'>
-            <!--Flex parent that will activate at SM breakpoint-->
-            <div class='sm:flex sm:items-center'>
-               <div class='pb-20 sm: mt-8 sm:mr-8 sm:flex-1'>
-                  <h2 class='font-bold text-3xl p-8'>Bunni Group is the largest developmental, residential  and sales agency</h2>
-               </div>
-               <!--INDIVIDUAL IMAGE CONTAINERS-->
-               <div class='relative mt-8 mb-8 cursor-pointer sm:flex-1  '>
-                  <div class=''>
-                     <img src="https://i.vgy.me/FY7YGk.jpg" alt="FY7YGk.jpg">
+         <!--Flex parent End-->
+         <div class='mt-8 flex-1 sm:mt-0'>
+            <div>
+               <img src="https://i.vgy.me/W1jHul.jpg" alt="W1jHul.jpg">
+               <div class='flex justify-between'>
+                  <div class='text-2xl mt-4'>
+                     <i class="fas fa-long-arrow-alt-left mr-6"></i>
+                     <i class="fas fa-long-arrow-alt-right"></i>
                   </div>
-                  <div class='absolute pl-4 pb-4 bottom-0 text-2xl font-bold '>
-                     <span>Office Space</span>
-                  </div>
-               </div>
-            </div>
-            <!--Flex parent that will activate at SM breakpoint-->
-            <div class='sm:flex'>
-               <div class='relative mt-8 mb-8 cursor-pointer sm:mr-8'>
-                  <div class=''>
-                     <img src="https://i.vgy.me/EpJgxf.jpg" alt="EpJgxf.jpg">
-                  </div>
-                  <div class='absolute pl-4 pb-4 bottom-0 text-2xl font-bold '>
-                     <span>Luxury Villas</span>
-                  </div>
-               </div>
-               <div class='relative mt-8 mb-8 cursor-pointer'>
-                  <div class=''>
-                     <img src="https://i.vgy.me/wqJKot.jpg" alt="k4Kc0G.jpg">
-                  </div>
-                  <div class='absolute pl-4 pb-4 bottom-0 text-2xl font-bold '>
-                     <span>Modern Houses</span>
-                  </div>
-               </div>
-            </div>
-            <!--Flex parent that will activate at SM breakpoint-->
-            <div class='sm:flex'>
-               <div class='relative mt-8 mb-8 cursor-pointer sm:mr-8'>
-                  <div class=''>
-                     <img src="https://i.vgy.me/FY7YGk.jpg" alt="FY7YGk.jpg">
-                  </div>
-                  <div class='absolute pl-4 pb-4 bottom-0 text-2xl font-bold '>
-                     <span>Modern Apartments</span>
-                  </div>
-               </div>
-               <div class='relative mt-8 mb-8 cursor-pointer'>
-                  <div class=''>
-                     <img src="https://i.vgy.me/qYfWRm.jpg" alt="FY7YGk.jpg">
-                  </div>
-                  <div class='absolute pl-4 pb-4 bottom-0 text-2xl font-bold '>
-                     <span>SkyScrapers</span>
+                  <div class='text-2xl mt-4'>
+                     <span>01/04</span>
                   </div>
                </div>
             </div>
          </div>
       </div>
-      <!--IMAGE LISTING FOR REAL ESTATE TYPES END HERE-->
-      <section>
-         <div id='viewMore' class='flex items-center justify-center p-8'>
-            <div class='text-white text-center'>
-               <h2 class='mb-8 text-4xl font-bold'>A Fresh start with our Houses</h2>
-               <button class='border p-4 '>View More</button>
-            </div>
-         </div>
-         <!--Container for text after small hero image-->
-         <div class='m-auto p-8 pt-20 text-white max-w-4xl'>
-            <div class='sm:flex'>
-            <div class='mb-14 sm:flex-1 sm:p-6'>
-               <h2 class='mb-4 text-4xl font-bold'>01</h2>
-               <h3 class='mb-2 text-2xl'>Planning Stage</h3>
-               <p>lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet</p>
-            </div>
-            <div class='mb-14 sm:flex-1 sm:p-6'>
-               <h2 class='mb-4 text-4xl font-bold'>02</h2>
-               <h3 class='mb-2 text-2xl'>Planning Stage</h3>
-               <p>lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet</p>
-            </div>
-         </div>
-         <div class='sm:flex'>
-            <div class='mb-14 sm:flex-1 sm:p-6'>
-               <h2 class='mb-4 text-4xl font-bold'>03</h2>
-               <h3 class='mb-2 text-2xl'>Planning Stage</h3>
-               <p>lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet</p>
-            </div>
-            <div class='mb-14 sm:flex-1 sm:p-6'>
-               <h2 class='mb-4 text-4xl font-bold'>04</h2>
-               <h3 class='mb-2 text-2xl'>Planning Stage</h3>
-               <p>lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet</p>
-            </div>
-         </div>
-         </div>
-         <!---Numbered Text containers end here-->
-         <div class='p-8 text-white pt-20 max-w-4xl m-auto'>
-            <div>
-               <h2 class='mb-8 text-4xl font-bold'>Modern Homes with great interior Designs</h2>
-               <p>lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet</p>
-               <div class='mt-8 '>
-                  <img src="https://i.vgy.me/FY7YGk.jpg" alt="FY7YGk.jpg">
-               </div>
-            </div>
-         </div>
-      </section>
-   </main>
-   <footer class='bg-black'>
-      <div class='p-8 text-white pt-20'>
-         <div>
-            <h2 class='mb-8 text-4xl font-bold'>Contact us for more Information</h2>
-            <p>lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet</p>
-            <div>
-               <div>
-                  <h2 class='mt-4 mb-4 font-semibold text-2xl'>Norwalk,CT</h2>
-               </div>
-               <div>
-                  <div class='mb-2'><i class="fas fa-phone-alt mr-4 "></i> 203-408-0584</div>
-                  <div class='mb-2'><i class="fas fa-phone-alt mr-4 "></i> 203-408-0584</div>
-                  <div class='mb-2'><i class="fas fa-phone-alt mr-4 "></i> 203-408-0584</div>
-               </div>
-            </div>
-            <div>
-               <div>
-                  <h2 class='mt-4 mb-4 font-semibold text-2xl'>Stamford,CT</h2>
-               </div>
-               <div>
-                  <div class='mb-2'><i class="fas fa-phone-alt mr-4 "></i> 203-408-0584</div>
-                  <div class='mb-2'><i class="fas fa-phone-alt mr-4 "></i> 203-408-0584</div>
-                  <div class='mb-2'><i class="fas fa-phone-alt mr-4 "></i> 203-408-0584</div>
-               </div>
-            </div>
-         </div>
       </div>
-      <!--Footer navigation Starts here-->
-      <div class='p-8 text-white pt-32'>
-         <!--Logo and following small text-->
-         <div>
-            <i class="fas fa-home text-5xl mb-6"></i>
-            <p>Showcase all your properties in a truly modern manner. Welcome to Fokkner.</p>
-         </div>
-         <!--Start off contact tooltip section-->
-         <div>
-            <div>
-               <h2 class='mt-4 mb-4 font-semibold text-2xl'>Contact</h2>
-            </div>
-            <div>
-               <div class='mb-2'><i class="fas fa-phone-alt mr-4 "></i> 203-408-0584</div>
-               <div class='mb-2'><i class="fas fa-phone-alt mr-4 "></i> 203-408-0584</div>
-               <div class='mb-2'><i class="fas fa-phone-alt mr-4 "></i> 203-408-0584</div>
-            </div>
-         </div>
-         <!--End of contact Tool tip-->
-         <!--start off useful links section-->
-         <div>
-            <div>
-               <h2 class='mt-4 mb-4 font-semibold text-2xl'>Useful Links</h2>
-            </div>
-            <div>
-               <div class='mb-2'><i class="fas fa-phone-alt mr-4 "></i> 203-408-0584</div>
-               <div class='mb-2'><i class="fas fa-phone-alt mr-4 "></i> 203-408-0584</div>
-               <div class='mb-2'><i class="fas fa-phone-alt mr-4 "></i> 203-408-0584</div>
-            </div>
-         </div>
-         <!--End off Useful Links section-->
-      </div>
-   </footer>
-   <script src='script.js'></script>
-</body>
+   </body>
 </html>
 
